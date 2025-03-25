@@ -16,6 +16,7 @@ self.addEventListener('install', evento=>{
                 'css/bootstrap.min.css',
                 'css/londinium-theme.css',
                 'css/styles.css',
+                'css/style.css',
                 'css/icons.css',
                 'js/bootstrap.min.js',
                 'js/application.js',
