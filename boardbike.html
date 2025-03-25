@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board & Bike</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <button class="nav-btn" onclick="scrollToSection('inicio')">Inicio</button>
+            <button class="nav-btn" onclick="scrollToSection('bicicletas')">Bicicletas</button>
+            <button class="nav-btn" onclick="scrollToSection('skateboards')">Skateboards</button>
+            <button class="nav-btn" onclick="scrollToSection('contacto')">Contacto</button>
+            <button class="cart-btn" onclick="openCart()">🛒 Carrito</button>
+        </nav>
+    </header>
+    
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            
+        </div>
+    </section>
+    
+    <section id="bicicletas">
+        <h2>Bicicletas</h2>
+        <div class="producto">
+            <img src="/images/bicicleta1.jpg" alt="Bicicleta de montaña">
+            <p>Bicicleta de montaña - $500</p>
+            <button onclick="addToCart('Bicicleta de montaña', 500)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="/images/bicicleta2.jpg" alt="Bicicleta urbana">
+            <p>Bicicleta urbana - $400</p>
+            <button onclick="addToCart('Bicicleta urbana', 400)">Añadir al carrito</button>
+        </div>
+    </section>
+    
+    <section id="skateboards">
+        <h2>Skateboards</h2>
+        <div class="producto">
+            <img src="/images/skate2.jpg" alt="Skateboard clásico">
+            <p>Skateboard clásico - $150</p>
+            <button onclick="addToCart('Skateboard clásico', 150)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="/images/skateboard1.jpg" alt="Skateboard profesional">
+            <p>Skateboard profesional - $250</p>
+            <button onclick="addToCart('Skateboard profesional', 250)">Añadir al carrito</button>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Comunícate con nosotros:</h2>
+        <p>Email: contacto@tiendabikeskates.com</p>
+        <p>Teléfono: 44-32-46-11-95</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Board & Bike. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button onclick="closeCart()">Cerrar</button>
+    </div>
+</body>
+</html>
+
