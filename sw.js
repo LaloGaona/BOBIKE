@@ -21,7 +21,7 @@ self.addEventListener('install', evento=>{
                 'js/application.js',
                 'js/app.js',
                 'offline.html',
-
+                'boardbike.html',
             ]);
         });
  
