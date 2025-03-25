@@ -23,6 +23,12 @@ self.addEventListener('install', evento=>{
                 'js/app.js',
                 'offline.html',
                 'boardbike.html',
+                'images/bicicleta1.jpg',
+                'images/bicicleta2.jpg',
+                'images/skate2.jpg',
+                'images/skateboard1.jpg',
+                'images/background.jpeg',
+
             ]);
         });
  
